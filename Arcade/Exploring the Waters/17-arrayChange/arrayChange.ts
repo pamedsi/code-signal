@@ -1,4 +1,4 @@
-function solution(inputArray: number[]): number {
+export function solution(inputArray: number[]): number {
   const isStrictlyIncreasing = (array: number[], i = 0) => {
       interface strictlyIncreasing {
         strictlyIncreasing: boolean
@@ -27,5 +27,3 @@ function solution(inputArray: number[]): number {
 
   return regulateArray(inputArray)
 }
-
-console.log(solution([1,2,3,4]))
