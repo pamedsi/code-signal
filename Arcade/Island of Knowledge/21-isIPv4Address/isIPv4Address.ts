@@ -9,5 +9,4 @@ function _solution(inputString: string): boolean {
     const numbersInInt = numbersInString.map(element => parseFloat(element))
     if (numbersInInt.some(isNaN)) return false
     return !numbersInInt.some(number => number < 0 || number > 255)
-
 }
